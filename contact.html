@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Contact Mini OpenStax - Get in touch with our support team for questions, feedback, or assistance with your learning journey.">
+<title>Contact Us | Mini OpenStax</title>
+
+<!-- Google Fonts: Inter & Playfair Display via media="print" onload trick -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"></noscript>
+
+<!-- Font Awesome 6.4.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+  --green: #006b3d;
+  --green-dark: #00502e;
+  --green-light: #e8f5ee;
+  --gold: #cead00;
+  --gold-light: #fdf6d8;
+  --red: #ce1126;
+  --red-light: #fde8ea;
+  --light: #f9f9f9;
+  --dark: #2d2d2d;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #1a202c;
+  --text-muted: #64748b;
+  --focus-ring: 0 0 0 3px rgba(0, 107, 61, 0.25);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --max-w: 800px;
+  --max-w-wide: 1200px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #0f1419;
+    --dark: #f5f5f5;
+    --surface: #1a202c;
+    --border: #2d3748;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --green-light: #0a2e1d;
+    --gold-light: #3d3400;
+    --red-light: #3d0a10;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.2; color: var(--text); }
+
+a { color: var(--green); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--green-dark); }
+a:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-md);
+  background: var(--green);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top var(--transition);
+}
+.skip-link:focus { top: var(--space-md); }
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+@media (prefers-color-scheme: dark) {
+  .site-header { background: rgba(26, 32, 44, 0.85); }
+}
+
+.header-inner {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--green);
+}
+.brand svg { flex-shrink: 0; }
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  color: var(--text);
+  transition: all var(--transition);
+}
+.nav-toggle:hover { background: var(--green-light); border-color: var(--green); }
+.nav-toggle:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: var(--space-xs);
+  align-items: center;
+}
+.nav-list a {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: all var(--transition);
+}
+.nav-list a:hover { background: var(--green-light); color: var(--green); }
+.nav-list a[aria-current="page"] {
+  background: var(--green);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display: flex; align-items: center; gap: var(--space-xs); }
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-md);
+    gap: var(--space-xs);
+    box-shadow: var(--shadow-md);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+  }
+  .nav-list.is-open {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-list a { width: 100%; padding: var(--space-sm) var(--space-md); }
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  padding: var(--space-3xl) var(--space-lg);
+  text-align: center;
+  border-bottom: 4px solid var(--gold);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(206, 173, 0, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(206, 17, 38, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-inner { max-width: var(--max-w-wide); margin: 0 auto; position: relative; z-index: 1; }
+.hero h1 {
+  color: white;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin-bottom: var(--space-sm);
+  font-weight: 800;
+}
+.hero .subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  opacity: 0.95;
+  margin-bottom: var(--space-md);
+  font-weight: 500;
+}
+.hero .indicator {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--dark);
+  padding: var(--space-xs) var(--space-lg);
+  border-radius: var(--radius-xl);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-md);
+}
+
+/* MAIN */
+main {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+  width: 100%;
+  flex: 1;
+}
+
+.section { margin-bottom: var(--space-3xl); }
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--space-md);
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+.section-title::before {
+  content: '';
+  width: 5px;
+  height: 1.5em;
+  background: linear-gradient(180deg, var(--green), var(--gold));
+  border-radius: 3px;
+}
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+  font-size: 1.05rem;
+}
+
+/* CONTACT CARDS */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+}
+
+.contact-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--gold), var(--red));
+}
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--green);
+}
+.contact-card .icon-wrap {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-md);
+  background: var(--green-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition);
+}
+.contact-card:hover .icon-wrap {
+  background: var(--green);
+  transform: scale(1.1);
+}
+.contact-card .icon-wrap i {
+  font-size: 1.5rem;
+  color: var(--green);
+  transition: color var(--transition);
+}
+.contact-card:hover .icon-wrap i {
+  color: white;
+}
+.contact-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-xs);
+  color: var(--green-dark);
+}
+.contact-card p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+}
+.contact-card a {
+  font-weight: 600;
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: var(--space-xs);
+}
+
+/* CONTACT FORM */
+.form-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .form-section { grid-template-columns: 1fr; }
+}
+
+.form-container {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+}
+.form-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  color: var(--green-dark);
+}
+.form-container .form-subtitle {
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+  font-size: 0.95rem;
+}
+
+.form-group {
+  margin-bottom: var(--space-lg);
+}
+.form-group label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: var(--space-xs);
+  color: var(--text);
+}
+.form-group label .required {
+  color: var(--red);
+  margin-left: 2px;
+}
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--text);
+  background: var(--light);
+  transition: all var(--transition);
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green);
+  box-shadow: var(--focus-ring);
+  background: var(--surface);
+}
+.form-group textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  border: none;
+  padding: var(--space-md) var(--space-2xl);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-md);
+  width: 100%;
+  justify-content: center;
+}
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+.submit-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* INFO PANEL */
+.info-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-sm);
+}
+.info-panel h3 {
+  font-size: 1.35rem;
+  margin-bottom: var(--space-md);
+  color: var(--green-dark);
+}
+.info-panel .info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--border);
+}
+.info-panel .info-item:last-child {
+  border-bottom: none;
+}
+.info-panel .info-item i {
+  color: var(--green);
+  font-size: 1.25rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+  width: 24px;
+  text-align: center;
+}
+.info-panel .info-item .info-content h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 2px;
+  color: var(--text);
+}
+.info-panel .info-item .info-content p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* FAQ SECTION */
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+.faq-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+}
+.faq-card:hover {
+  box-shadow: var(--shadow-md);
+  border-color: var(--gold);
+}
+.faq-card .faq-num {
+  display: inline-block;
+  background: var(--gold-light);
+  color: var(--dark);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.8rem;
+  margin-bottom: var(--space-sm);
+  border: 1px solid var(--gold);
+}
+.faq-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+  color: var(--green-dark);
+}
+.faq-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* WHATSAPP CTA */
+.whatsapp-cta {
+  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  color: white;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.whatsapp-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.whatsapp-cta h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+.whatsapp-cta p {
+  font-size: 1rem;
+  margin-bottom: var(--space-lg);
+  opacity: 0.95;
+  position: relative;
+}
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  background: white;
+  color: #128c7e;
+  padding: var(--space-md) var(--space-2xl);
+  border-radius: var(--radius-xl);
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-md);
+  position: relative;
+}
+.whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  color: #075e54;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--dark);
+  color: #cbd5e0;
+  padding: var(--space-3xl) var(--space-lg) var(--space-lg);
+  margin-top: auto;
+}
+@media (prefers-color-scheme: dark) {
+  .site-footer { background: #0a0e14; }
+}
+.footer-inner {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-col h4 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin-bottom: var(--space-md);
+}
+.footer-col p { font-size: 0.9rem; line-height: 1.7; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: var(--space-xs); }
+.footer-col ul li a {
+  color: #cbd5e0;
+  font-size: 0.9rem;
+  transition: color var(--transition);
+}
+.footer-col ul li a:hover { color: var(--gold); }
+.footer-col .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: 0.9rem;
+}
+.footer-col .contact-item i {
+  color: var(--gold);
+  margin-top: 3px;
+  width: 16px;
+}
+.footer-bottom {
+  max-width: var(--max-w-wide);
+  margin: var(--space-lg) auto 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+.footer-bottom p { margin-bottom: var(--space-xs); }
+.footer-bottom a { color: var(--gold); }
+
+/* SUCCESS MESSAGE */
+.success-message {
+  display: none;
+  background: var(--green-light);
+  border: 1px solid var(--green);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+  color: var(--green-dark);
+  font-weight: 600;
+}
+.success-message.show {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* UTILITIES */
+@media (max-width: 640px) {
+  main { padding: var(--space-xl) var(--space-md); }
+  .hero { padding: var(--space-2xl) var(--space-md); }
+  .contact-card { padding: var(--space-lg); }
+  .form-container, .info-panel { padding: var(--space-lg); }
+  .whatsapp-cta { padding: var(--space-lg); }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Mini OpenStax Home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#006b3d"/>
+        <path d="M8 10 L16 6 L24 10 L24 22 L16 26 L8 22 Z" fill="#cead00" opacity="0.9"/>
+        <path d="M16 6 L16 26" stroke="#fff" stroke-width="1.5"/>
+        <path d="M8 10 L16 14 L24 10" stroke="#fff" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>Mini OpenStax</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <span>Menu</span>
+    </button>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-description.html">Job Description</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>📞 Contact Us</h1>
+    <p class="subtitle">Get in Touch — We're Here to Help</p>
+    <span class="indicator">Support & Feedback</span>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main id="main-content">
+
+  <!-- CONTACT METHODS -->
+  <section class="section" aria-labelledby="contact-methods-title">
+    <h2 class="section-title" id="contact-methods-title">Reach Out to Us</h2>
+    <p class="section-subtitle">Choose the most convenient way to get in touch with our support team. We typically respond within 24 hours.</p>
+
+    <div class="contact-grid">
+
+      <article class="contact-card">
+        <div class="icon-wrap">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3>Call Us</h3>
+        <p>Speak directly with our support team</p>
+        <a href="tel:+233257320201">+233 25 732 0201</a>
+      </article>
+
+      <article class="contact-card">
+        <div class="icon-wrap">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h3>Email Us</h3>
+        <p>Send us a detailed message anytime</p>
+        <a href="mailto:support@miniopenstax.edu.gh">support@miniopenstax.edu.gh</a>
+      </article>
+
+      <article class="contact-card">
+        <div class="icon-wrap">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Quick chat via WhatsApp messaging</p>
+        <a href="https://wa.me/233257320201" target="_blank" rel="noopener">+233 25 732 0201</a>
+      </article>
+
+      <article class="contact-card">
+        <div class="icon-wrap">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3>Visit Us</h3>
+        <p>Come by our office in Accra</p>
+        <a href="#">Accra, Ghana</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & INFO -->
+  <section class="section" aria-labelledby="form-title">
+    <h2 class="section-title" id="form-title">Send Us a Message</h2>
+    <p class="section-subtitle">Have a question, feedback, or need assistance? Fill out the form below and we'll get back to you as soon as possible.</p>
+
+    <div class="form-section">
+
+      <!-- FORM -->
+      <div class="form-container">
+        <h3>📝 Contact Form</h3>
+        <p class="form-subtitle">All fields marked with <span style="color: var(--red);">*</span> are required.</p>
+
+        <div class="success-message" id="successMessage">
+          <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully. We'll get back to you shortly.
+        </div>
+
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+233 XX XXX XXXX" autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject <span class="required">*</span></label>
+            <select id="subject" name="subject" required>
+              <option value="">— Select a topic —</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="feedback">Feedback & Suggestions</option>
+              <option value="bug">Report a Bug</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- INFO PANEL -->
+      <div class="info-panel">
+        <h3>📌 Additional Information</h3>
+
+        <div class="info-item">
+          <i class="fa-solid fa-clock"></i>
+          <div class="info-content">
+            <h4>Support Hours</h4>
+            <p>Monday – Friday: 8:00 AM – 6:00 PM (GMT)<br>Saturday: 9:00 AM – 2:00 PM (GMT)<br>Sunday: Closed</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-rotate"></i>
+          <div class="info-content">
+            <h4>Response Time</h4>
+            <p>We aim to respond to all inquiries within 24 hours during business days. Urgent matters are prioritized.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-language"></i>
+          <div class="info-content">
+            <h4>Languages</h4>
+            <p>We provide support in English, Twi, Ga, and Ewe to better serve our Ghanaian community.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div class="info-content">
+            <h4>Privacy & Security</h4>
+            <p>Your personal information is protected and never shared with third parties. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <i class="fa-solid fa-book"></i>
+          <div class="info-content">
+            <h4>Self-Help Resources</h4>
+            <p>Check our <a href="faq.html">FAQ page</a> for quick answers to common questions about lessons, quizzes, and account management.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="section" aria-labelledby="faq-title">
+    <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+    <p class="section-subtitle">Quick answers to the most common questions from our users.</p>
+
+    <div class="faq-grid">
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 01</span>
+        <h4>How do I access my lessons?</h4>
+        <p>All lessons are available directly through this website. Simply navigate to the relevant class and subject from the home page. No login is required for basic access.</p>
+      </article>
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 02</span>
+        <h4>Is my progress saved automatically?</h4>
+        <p>Yes! Your quiz scores, lesson progress, and dashboard data are automatically saved to your browser's local storage. Make sure not to clear your browser data if you want to keep your records.</p>
+      </article>
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 03</span>
+        <h4>Can I switch between student and instructor roles?</h4>
+        <p>Absolutely. Click the settings icon in the navigation bar and toggle between "Student" and "Instructor" modes. Your preference is saved for future visits.</p>
+      </article>
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 04</span>
+        <h4>How do I share my quiz results?</h4>
+        <p>After completing a quiz, click the "Share via WhatsApp" button. A formatted report will be generated and you can send it directly to your teacher, parent, or study group.</p>
+      </article>
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 05</span>
+        <h4>Is the content aligned with NaCCA?</h4>
+        <p>Yes, all our educational content is carefully aligned with the Ghana National Council for Curriculum and Assessment (NaCCA) standards-based curriculum for basic schools.</p>
+      </article>
+
+      <article class="faq-card">
+        <span class="faq-num">FAQ 06</span>
+        <h4>Does it work offline?</h4>
+        <p>Once loaded, most features work without an internet connection since content is stored locally. However, initial loading and some features require connectivity.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- WHATSAPP CTA -->
+  <section class="section" aria-labelledby="whatsapp-title">
+    <div class="whatsapp-cta">
+      <h2 id="whatsapp-title"><i class="fa-brands fa-whatsapp"></i> Prefer WhatsApp?</h2>
+      <p>Get instant support, share feedback, or ask questions directly through WhatsApp. Our team is ready to help!</p>
+      <a href="https://wa.me/233257320201?text=Hello%20Mini%20OpenStax%2C%20I%20need%20help..." class="whatsapp-btn" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Mini OpenStax</h4>
+      <p>Free, high-quality, and accessible educational content for Ghanaian learners. Aligned with the NaCCA standards-based curriculum to empower every student.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-description.html">Job Description</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i> <span>+233 25 732 0201</span></div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:support@miniopenstax.edu.gh">support@miniopenstax.edu.gh</a></div>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i> <span>Accra, Ghana</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Mini OpenStax. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // Dynamic copyright year
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('navList');
+
+  if (toggle && navList) {
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = navList.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', function (e) {
+      if (!navList.contains(e.target) && !toggle.contains(e.target) && navList.classList.contains('is-open')) {
+        navList.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navList.classList.contains('is-open')) {
+        navList.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+
+    navList.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 768) {
+          navList.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+
+  // Contact form handling
+  var form = document.getElementById('contactForm');
+  var successMsg = document.getElementById('successMessage');
+
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      // Basic validation
+      var name = document.getElementById('fullName').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !subject || !message) {
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      // Email format check
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // Save to localStorage (simulated submission)
+      var submissions = JSON.parse(localStorage.getItem('contact_submissions') || '[]');
+      submissions.push({
+        name: name,
+        email: email,
+        phone: document.getElementById('phone').value.trim(),
+        subject: subject,
+        message: message,
+        timestamp: new Date().toISOString()
+      });
+      localStorage.setItem('contact_submissions', JSON.stringify(submissions));
+
+      // Show success message
+      successMsg.classList.add('show');
+      form.reset();
+
+      // Scroll to success message
+      successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+      // Hide success message after 8 seconds
+      setTimeout(function () {
+        successMsg.classList.remove('show');
+      }, 8000);
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
