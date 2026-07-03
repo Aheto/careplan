@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="description" content="Daily Job Description and Grandma's Care - Comprehensive guide for caregivers including daily duties, weekly schedules, and care responsibilities.">
+<title>Daily Job Description Programme | Grandma's Care - Mini OpenStax</title>
+
+<!-- Google Fonts: Inter & Playfair Display via media="print" onload trick -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet"></noscript>
+
+<!-- Font Awesome 6.4.0 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+:root {
+  --green: #006b3d;
+  --green-dark: #00502e;
+  --green-light: #e8f5ee;
+  --gold: #cead00;
+  --gold-light: #fdf6d8;
+  --red: #ce1126;
+  --red-light: #fde8ea;
+  --light: #f9f9f9;
+  --dark: #2d2d2d;
+  --surface: #ffffff;
+  --border: #e2e8f0;
+  --text: #1a202c;
+  --text-muted: #64748b;
+  --focus-ring: 0 0 0 3px rgba(0, 107, 61, 0.25);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 50px rgba(0, 0, 0, 0.15);
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --max-w: 800px;
+  --max-w-wide: 1200px;
+  --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --light: #0f1419;
+    --dark: #f5f5f5;
+    --surface: #1a202c;
+    --border: #2d3748;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --green-light: #0a2e1d;
+    --gold-light: #3d3400;
+    --red-light: #3d0a10;
+  }
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; line-height: 1.2; color: var(--text); }
+
+a { color: var(--green); text-decoration: none; transition: color var(--transition); }
+a:hover { color: var(--green-dark); }
+a:focus-visible { outline: none; box-shadow: var(--focus-ring); border-radius: var(--radius-sm); }
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: var(--space-md);
+  background: var(--green);
+  color: white;
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  z-index: 1000;
+  transition: top var(--transition);
+}
+.skip-link:focus { top: var(--space-md); }
+
+/* HEADER */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+@media (prefers-color-scheme: dark) {
+  .site-header { background: rgba(26, 32, 44, 0.85); }
+}
+
+.header-inner {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--green);
+}
+.brand svg { flex-shrink: 0; }
+
+.nav-toggle {
+  display: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-xs) var(--space-sm);
+  cursor: pointer;
+  color: var(--text);
+  transition: all var(--transition);
+}
+.nav-toggle:hover { background: var(--green-light); border-color: var(--green); }
+.nav-toggle:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: var(--space-xs);
+  align-items: center;
+}
+.nav-list a {
+  display: block;
+  padding: var(--space-xs) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text);
+  transition: all var(--transition);
+}
+.nav-list a:hover { background: var(--green-light); color: var(--green); }
+.nav-list a[aria-current="page"] {
+  background: var(--green);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle { display: flex; align-items: center; gap: var(--space-xs); }
+  .nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: var(--space-md);
+    gap: var(--space-xs);
+    box-shadow: var(--shadow-md);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+  }
+  .nav-list.is-open {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .nav-list a { width: 100%; padding: var(--space-sm) var(--space-md); }
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  padding: var(--space-3xl) var(--space-lg);
+  text-align: center;
+  border-bottom: 4px solid var(--gold);
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 20% 50%, rgba(206, 173, 0, 0.15) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 80%, rgba(206, 17, 38, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+.hero-inner { max-width: var(--max-w-wide); margin: 0 auto; position: relative; z-index: 1; }
+.hero h1 {
+  color: white;
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin-bottom: var(--space-sm);
+  font-weight: 800;
+}
+.hero .subtitle {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  opacity: 0.95;
+  margin-bottom: var(--space-md);
+  font-weight: 500;
+}
+.hero .indicator {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--dark);
+  padding: var(--space-xs) var(--space-lg);
+  border-radius: var(--radius-xl);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-md);
+}
+
+/* MAIN */
+main {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+  width: 100%;
+  flex: 1;
+}
+
+.section { margin-bottom: var(--space-3xl); }
+.section-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: var(--space-md);
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+.section-title::before {
+  content: '';
+  width: 5px;
+  height: 1.5em;
+  background: linear-gradient(180deg, var(--green), var(--gold));
+  border-radius: 3px;
+}
+.section-subtitle {
+  color: var(--text-muted);
+  margin-bottom: var(--space-xl);
+  font-size: 1.05rem;
+}
+
+/* JOB DESCRIPTION CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.job-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.job-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--green), var(--gold), var(--red));
+}
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--green);
+}
+.job-card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+.job-card .card-num {
+  background: var(--green-light);
+  color: var(--green-dark);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.job-card .indicator-tag {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+.job-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-xs);
+  color: var(--green-dark);
+}
+.job-card .category {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px dashed var(--border);
+}
+.job-card .category strong { color: var(--text); }
+.job-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--green);
+  margin-bottom: var(--space-sm);
+  font-weight: 700;
+}
+.job-card ul {
+  list-style: none;
+  margin-bottom: var(--space-md);
+}
+.job-card ul li {
+  padding: var(--space-xs) 0;
+  padding-left: 1.75rem;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+.job-card ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.job-card .meta {
+  background: var(--light);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  font-size: 0.85rem;
+}
+.job-card .meta strong { color: var(--green-dark); display: block; margin-bottom: 2px; }
+.job-card .keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+.job-card .keywords span {
+  background: var(--gold-light);
+  color: var(--dark);
+  padding: 2px 10px;
+  border-radius: var(--radius-xl);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--gold);
+}
+
+/* WEEKLY SCHEDULE */
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-xl);
+}
+.schedule-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+  border-left: 4px solid var(--gold);
+}
+.schedule-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--green-dark);
+}
+.schedule-card ul {
+  list-style: none;
+}
+.schedule-card ul li {
+  padding: var(--space-xs) 0 var(--space-xs) 1.75rem;
+  position: relative;
+  font-size: 0.95rem;
+}
+.schedule-card ul li::before {
+  content: '📅';
+  position: absolute;
+  left: 0;
+}
+
+/* DUTY CHECKLIST */
+.duty-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-xl);
+  box-shadow: var(--shadow-sm);
+}
+.duty-section h3 {
+  font-size: 1.25rem;
+  margin-bottom: var(--space-md);
+  color: var(--green-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+.duty-section ul {
+  list-style: none;
+}
+.duty-section ul li {
+  padding: var(--space-sm) 0;
+  padding-left: 2rem;
+  position: relative;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+.duty-section ul li:last-child {
+  border-bottom: none;
+}
+.duty-section ul li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.duty-section .important-note {
+  background: var(--red-light);
+  border-left: 4px solid var(--red);
+  padding: var(--space-md);
+  border-radius: var(--radius-sm);
+  margin-top: var(--space-md);
+  font-weight: 600;
+  color: var(--red);
+}
+
+/* PROGRESS CARD */
+.progress-card {
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: white;
+  padding: var(--space-2xl);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.progress-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; right: -20%;
+  width: 300px; height: 300px;
+  background: radial-gradient(circle, rgba(206, 173, 0, 0.2) 0%, transparent 70%);
+  border-radius: 50%;
+}
+.progress-card h2 {
+  color: white;
+  font-size: 1.75rem;
+  margin-bottom: var(--space-md);
+  position: relative;
+}
+.progress-card p {
+  font-size: 1.05rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+}
+.progress-card .subtext {
+  opacity: 0.85;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* FOOTER */
+.site-footer {
+  background: var(--dark);
+  color: #cbd5e0;
+  padding: var(--space-3xl) var(--space-lg) var(--space-lg);
+  margin-top: auto;
+}
+@media (prefers-color-scheme: dark) {
+  .site-footer { background: #0a0e14; }
+}
+.footer-inner {
+  max-width: var(--max-w-wide);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-col h4 {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin-bottom: var(--space-md);
+}
+.footer-col p { font-size: 0.9rem; line-height: 1.7; }
+.footer-col ul { list-style: none; }
+.footer-col ul li { margin-bottom: var(--space-xs); }
+.footer-col ul li a {
+  color: #cbd5e0;
+  font-size: 0.9rem;
+  transition: color var(--transition);
+}
+.footer-col ul li a:hover { color: var(--gold); }
+.footer-col .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+  font-size: 0.9rem;
+}
+.footer-col .contact-item i {
+  color: var(--gold);
+  margin-top: 3px;
+  width: 16px;
+}
+.footer-bottom {
+  max-width: var(--max-w-wide);
+  margin: var(--space-lg) auto 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+.footer-bottom p { margin-bottom: var(--space-xs); }
+.footer-bottom a { color: var(--gold); }
+
+/* UTILITIES */
+@media (max-width: 640px) {
+  main { padding: var(--space-xl) var(--space-md); }
+  .hero { padding: var(--space-2xl) var(--space-md); }
+  .job-card { padding: var(--space-lg); }
+  .schedule-card, .progress-card { padding: var(--space-lg); }
+}
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="brand" aria-label="Mini OpenStax Home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#006b3d"/>
+        <path d="M8 10 L16 6 L24 10 L24 22 L16 26 L8 22 Z" fill="#cead00" opacity="0.9"/>
+        <path d="M16 6 L16 26" stroke="#fff" stroke-width="1.5"/>
+        <path d="M8 10 L16 14 L24 10" stroke="#fff" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>Mini OpenStax</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Toggle navigation menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"/>
+        <line x1="3" y1="12" x2="21" y2="12"/>
+        <line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+      <span>Menu</span>
+    </button>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-description.html" aria-current="page">Job Description</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <h1>📋 JOB DESCRIPTION AND GRANDMA'S CARE</h1>
+    <p class="subtitle">Daily Duties Programme & Care Guidelines</p>
+    <span class="indicator">Long Term Position - 2 Years On Going</span>
+  </div>
+</section>
+
+<!-- MAIN -->
+<main id="main-content">
+
+  <!-- JOB OVERVIEW -->
+  <section class="section" aria-labelledby="overview-title">
+    <h2 class="section-title" id="overview-title">Job Overview</h2>
+    <p class="section-subtitle">Comprehensive care responsibilities for grandma's wellbeing, including daily assistance, medication management, and household duties.</p>
+
+    <div class="card-grid">
+
+      <!-- Card 1 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Duration</span>
+          <span class="indicator-tag">Long Term</span>
+        </div>
+        <h3>Employment Period</h3>
+        <p class="category"><strong>Contract Type:</strong> Ongoing Care Position</p>
+        <h4>Key Details:</h4>
+        <ul>
+          <li>Long term commitment - 2 years on going +++++</li>
+          <li>Dedicated care for grandma's daily needs</li>
+          <li>Comprehensive household management</li>
+        </ul>
+        <div class="meta"><strong>Core Responsibilities:</strong> Personal Care, Household Management, Safety & Security</div>
+        <div class="keywords">
+          <span>Long Term</span><span>Full Time</span><span>Caregiver</span>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Primary Duty</span>
+          <span class="indicator-tag">Constant Care</span>
+        </div>
+        <h3>Constant Supervision</h3>
+        <p class="category"><strong>Requirement:</strong> Full-Time Presence</p>
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li>To please be with mum at all times</li>
+          <li>Continuous monitoring and assistance</li>
+          <li>Immediate response to needs</li>
+        </ul>
+        <div class="meta"><strong>Availability:</strong> 24/7 Care Support</div>
+        <div class="keywords">
+          <span>Supervision</span><span>Attendance</span><span>Support</span>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Wellbeing</span>
+          <span class="indicator-tag">Comprehensive Care</span>
+        </div>
+        <h3>Mum's Overall Wellbeing</h3>
+        <p class="category"><strong>Scope:</strong> Complete Personal Care</p>
+        <h4>Duties Include:</h4>
+        <ul>
+          <li>Washing and personal hygiene</li>
+          <li>Cleaning and maintaining cleanliness</li>
+          <li>Cooking and meal preparation</li>
+          <li>Ensuring Mum eats on time</li>
+          <li>Administering medication</li>
+          <li>Any other help mum needs - Thank you</li>
+        </ul>
+        <div class="meta"><strong>Focus Areas:</strong> Health, Nutrition, Hygiene, Comfort</div>
+        <div class="keywords">
+          <span>Personal Care</span><span>Meals</span><span>Medication</span><span>Hygiene</span>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Escort Duty</span>
+          <span class="indicator-tag">Transportation</span>
+        </div>
+        <h3>Accompanying Mum Out</h3>
+        <p class="category"><strong>When:</strong> All Outings</p>
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li>To please escort mum whenever she's going out</li>
+          <li>Attending occasions and social events</li>
+          <li>Accompanying to medical appointments</li>
+          <li>Giving feedback on her appointments</li>
+        </ul>
+        <div class="meta"><strong>Communication:</strong> Report back on appointments and outings</div>
+        <div class="keywords">
+          <span>Escort</span><span>Appointments</span><span>Occasions</span><span>Feedback</span>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Medication</span>
+          <span class="indicator-tag">Health Management</span>
+        </div>
+        <h3>Medication Assistance</h3>
+        <p class="category"><strong>Task:</strong> Medicine Management</p>
+        <h4>Duties:</h4>
+        <ul>
+          <li>Helping with grandma's medication</li>
+          <li>Making sure she has taken it on time</li>
+          <li>Medication box refilled for the week</li>
+          <li>Tracking and monitoring schedule</li>
+        </ul>
+        <div class="meta"><strong>Critical:</strong> Timely administration and weekly refill</div>
+        <div class="keywords">
+          <span>Medication</span><span>Timing</span><span>Refill</span><span>Health</span>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="job-card">
+        <div class="card-head">
+          <span class="card-num">Dressing</span>
+          <span class="indicator-tag">Personal Care</span>
+        </div>
+        <h3>Assistance with Dressing</h3>
+        <p class="category"><strong>When:</strong> Going Out</p>
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li>Help grandma with her dressing up when going out</li>
+          <li>Selecting appropriate clothing</li>
+          <li>Ensuring comfort and appropriateness</li>
+        </ul>
+        <div class="meta"><strong>Focus:</strong> Dignity and comfort in appearance</div>
+        <div class="keywords">
+          <span>Dressing</span><span>Grooming</span><span>Appearance</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- DAILY DUTIES -->
+  <section class="section" aria-labelledby="duties-title">
+    <h2 class="section-title" id="duties-title">GUIDE TO DAILY DUTIES AND OTHER STUFF TO DO</h2>
+    <p class="section-subtitle">Detailed daily tasks and responsibilities to maintain a clean, safe, and comfortable environment.</p>
+
+    <!-- Duty 1 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-bath"></i> 1. Bathroom Cleaning</h3>
+      <ul>
+        <li>Please clean mum bathroom, sink and toilet</li>
+      </ul>
+    </div>
+
+    <!-- Duty 2 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-bed"></i> 2. Bedroom Maintenance</h3>
+      <ul>
+        <li>Make the bed and sweep the floor</li>
+        <li>And dust side table and head board bed</li>
+        <li>In general please make sure mum's room is clean</li>
+      </ul>
+    </div>
+
+    <!-- Duty 3 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-broom"></i> 3. Compound Cleaning</h3>
+      <ul>
+        <li>Sweep the compound espeacially around the flowers and mango tree</li>
+        <li>When leaves are fallen</li>
+      </ul>
+    </div>
+
+    <!-- Duty 4 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-bone"></i> 4. Pet Care</h3>
+      <ul>
+        <li>Please clean the dog's bowls daily</li>
+        <li>Give dog clean water and food daily</li>
+        <li>Food twice</li>
+      </ul>
+    </div>
+
+    <!-- Duty 5 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-kitchen-set"></i> 5. Kitchen Duties</h3>
+      <ul>
+        <li>Please wash plates and saucepans daily</li>
+        <li>Empty kitchen bin every night</li>
+        <li>Sweep the floor and clean surfaces</li>
+        <li>Please mop the floor regularly</li>
+      </ul>
+      <div class="important-note">
+        <i class="fa-solid fa-circle-exclamation"></i> * Kitchen must be clean & tidy
+      </div>
+    </div>
+
+    <!-- Duty 6 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-lock"></i> 6. Security & Safety</h3>
+      <ul>
+        <li>Please make sure kitchen back door is locked always, when not in kitchen for safety</li>
+        <li>And also make sure main gate is close with padlock</li>
+        <li>When visitors come in and leaves</li>
+      </ul>
+    </div>
+
+    <!-- Duty 7 -->
+    <div class="duty-section">
+      <h3><i class="fa-solid fa-shirt"></i> 7. Laundry</h3>
+      <ul>
+        <li>Please wash mum's clothing, towels, bed linen regularly and when she wants you to do it</li>
+        <li>Please don't pile it</li>
+        <li>And please iron when needs to</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- WEEKLY SCHEDULE -->
+  <section class="section" aria-labelledby="schedule-title">
+    <h2 class="section-title" id="schedule-title">Weekly Schedule</h2>
+    <p class="section-subtitle">Specific tasks assigned to particular days of the week for systematic completion.</p>
+
+    <div class="schedule-grid">
+      <article class="schedule-card">
+        <h3><i class="fa-regular fa-calendar-check"></i> MONDAY & THURSDAY</h3>
+        <ul>
+          <li>Change mum's bed</li>
+          <li>Wash towels and bed sheets & others</li>
+        </ul>
+      </article>
+
+      <article class="schedule-card">
+        <h3><i class="fa-regular fa-calendar-days"></i> WEDNESDAY</h3>
+        <ul>
+          <li>Clean windows</li>
+          <li>Mop the floors</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROGRESS TRACKING -->
+  <section class="section" aria-labelledby="progress-title">
+    <div class="progress-card">
+      <h2 id="progress-title">📊 Daily Task Completion</h2>
+      <p>Consistent completion of all daily duties ensures grandma's comfort, safety, and wellbeing. Track your progress and maintain the highest standards of care.</p>
+      <p class="subtext">Your dedication makes a difference in providing quality care and a comfortable home environment.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>Mini OpenStax</h4>
+      <p>Supporting caregivers with comprehensive job descriptions and care guidelines for quality home-based care services.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="job-description.html">Job Description</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="contact.html">Contact Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <div class="contact-item"><i class="fa-solid fa-phone"></i> <span>+233 25 732 0201</span></div>
+      <div class="contact-item"><i class="fa-solid fa-envelope"></i> <a href="mailto:care@miniopenstax.edu.gh">care@miniopenstax.edu.gh</a></div>
+      <div class="contact-item"><i class="fa-solid fa-location-dot"></i> <span>Accra, Ghana</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Mini OpenStax. All rights reserved.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  // Dynamic copyright year
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  var toggle = document.getElementById('navToggle');
+  var navList = document.getElementById('navList');
+
+  if (toggle && navList) {
+    toggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = navList.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    // Click outside to close
+    document.addEventListener('click', function (e) {
+      if (!navList.contains(e.target) && !toggle.contains(e.target) && navList.classList.contains('is-open')) {
+        navList.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    // Escape key to close and refocus
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && navList.classList.contains('is-open')) {
+        navList.classList.remove('is-open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
+    });
+
+    // Close on nav link click (mobile UX)
+    navList.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (window.innerWidth <= 768) {
+          navList.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>
